@@ -12,6 +12,7 @@
       <module>spt-hibernate-service</module>
     <module>spt-mybatis-service</module>
     <module>spt-tcache-service</module>
+      <module>spt-common-service</module>
   </modules>
 
   <packaging>pom</packaging>
@@ -20,6 +21,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <springboot.version>1.4.0.RELEASE</springboot.version>
+    <junit.version>3.8.1</junit.version>
   </properties>
 
   <parent>
@@ -29,8 +31,15 @@
   </parent>
 
   <dependencyManagement>
-  <dependencies>
+    <dependencies>
 
-  </dependencies>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${junit.version}</version>
+        <scope>test</scope>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
+
 </project>
