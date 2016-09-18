@@ -6,13 +6,13 @@
   <artifactId>spt-app-coll</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
+    <module>spt-common-service</module>
     <module>spt-dubbo-service</module>
     <module>spt-quartz-service</module>
-    <module>spt-web-app</module>
-      <module>spt-hibernate-service</module>
+    <module>spt-hibernate-service</module>
     <module>spt-mybatis-service</module>
     <module>spt-tcache-service</module>
-      <module>spt-common-service</module>
+    <module>spt-web-app</module>
   </modules>
 
   <packaging>pom</packaging>
