@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.spt.coll</groupId>
-  <artifactId>spt-app-coll</artifactId>
+  <artifactId>my-springboot-all</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>spt-common-service</module>
@@ -13,6 +13,7 @@
     <module>spt-mybatis-service</module>
     <module>spt-tcache-service</module>
     <module>spt-web-app</module>
+    <module>spt-servlet-service</module>
   </modules>
 
   <packaging>pom</packaging>
