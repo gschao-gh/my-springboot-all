@@ -22,16 +22,19 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <springboot.version>1.4.0.RELEASE</springboot.version>
     <junit.version>3.8.1</junit.version>
+    <java.version>1.8</java.version>
   </properties>
-
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>${springboot.version}</version>
-  </parent>
 
   <dependencyManagement>
     <dependencies>
+      <!-- Import dependency management from Spring Boot -->
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>${springboot.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
       <dependency>
         <groupId>junit</groupId>
@@ -41,5 +44,6 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
 
 </project>
